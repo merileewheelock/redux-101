@@ -13,6 +13,7 @@ import StudentReducer from './StudentReducer';
 // import the SelectedStudent reducer
 import SelectedStudentReducer from './SelectedStudentReducer';
 import TimerReducer from './TimerReducer';
+import WeatherReducer from './WeatherReducer';
 
 // Create a rootReducer using the combineReducer method, so we can export it
 // to the store in index.js
@@ -21,7 +22,8 @@ const rootReducer = combineReducers({
 	// Each key will be available as a piece of state later
 	students: StudentReducer,
 	selectedStudent: SelectedStudentReducer,
-	timer: TimerReducer
+	timer: TimerReducer,
+	weather: WeatherReducer
 })
 
 export default rootReducer;
