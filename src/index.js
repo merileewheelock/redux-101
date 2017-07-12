@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App';
 import './index.css';
-import ReduxStudents from './containers/ReduxStudents';
 
 // Go get the createStore method from the redux module
 import { createStore } from 'redux';
@@ -17,7 +17,9 @@ const theStore = createStore(reducers);
 // ReactDOM.render takes 2 args... 1. What, 2. Where
 ReactDOM.render(
 	<Provider store={theStore}>
-		<ReduxStudents />
+		<div className="app">
+			<App />
+		</div>
 	</Provider>,
 	document.getElementById('root')
 );
